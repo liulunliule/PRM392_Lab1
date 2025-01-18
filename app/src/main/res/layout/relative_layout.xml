@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In Form"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:background="@null"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:paddingBottom="8dp"
+        android:singleLine="true"
+        android:layout_marginBottom="10dp" />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/et_username"
+        android:background="#000" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:background="@null"
+        android:layout_below="@+id/et_username"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:paddingBottom="8dp"
+        android:singleLine="true"
+        android:layout_marginBottom="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/et_password"
+        android:background="#000" />
+
+    <TextView
+        android:id="@+id/tv_create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not account yet? Create one"
+        android:layout_below="@+id/et_password"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or"
+        android:layout_below="@+id/tv_create_account"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_toLeftOf="@+id/tv_or"
+        android:layout_alignBaseline="@+id/tv_or"
+        android:layout_marginRight="10dp"
+        android:background="#000" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_toRightOf="@+id/tv_or"
+        android:layout_alignBaseline="@+id/tv_or"
+        android:layout_marginLeft="10dp"
+        android:background="#000" />
+
+    <Button
+        android:id="@+id/btn_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        android:layout_below="@+id/tv_or"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#D3D3D3"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+</RelativeLayout>
