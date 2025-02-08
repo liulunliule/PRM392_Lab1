@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.204"
-        app:srcCompat="@drawable/whiteIconFacebook"
+        app:srcCompat="@drawable/whitefacebook"
         android:contentDescription="Facebook Logo"/>
 
 
@@ -134,6 +134,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="29dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/forgot_btn"
+        app:srcCompat="@drawable/questionmark" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
